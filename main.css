@@ -18,8 +18,11 @@ section{
     position: absolute;
     top: 0;
     width: 200px;
+    height: 2px;
+    background: #fff;
 }
 .loader span::before{
     content: '';
     position: absolute;
+    left: 0;
 }
