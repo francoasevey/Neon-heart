@@ -17,9 +17,10 @@ section{
 .loader span {
     position: absolute;
     top: 0;
+    left: -200px;
     width: 200px;
-    height: 2px;
-    background: #fff;
+    transform-origin: right;
+    transform: rotate(calc(18deg * var(--i)));
 }
 .loader span::before {
     content: '';
@@ -30,6 +31,7 @@ section{
     background: #00ff0a;
     border-radius: 50%;
     animation: animate 2s linear infinite;
+    animation-delay: calc(-0.1s * var(--i));
     box-shadow: 0 0 10px #00ff0a,
     0 0 20px #00ff0a,
     0 0 40px #00ff0a,
