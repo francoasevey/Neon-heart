@@ -14,15 +14,20 @@ section{
 .loader{
     position: relative;
 }
-.loader span{
+.loader span {
     position: absolute;
     top: 0;
     width: 200px;
     height: 2px;
     background: #fff;
 }
-.loader span::before{
+.loader span::before {
     content: '';
     position: absolute;
     left: 0;
+    width: 15px;
+    height: 15px;
+    background: #00ff0a;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
 }
